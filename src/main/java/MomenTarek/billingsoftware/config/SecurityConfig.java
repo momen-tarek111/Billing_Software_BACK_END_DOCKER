@@ -54,7 +54,7 @@ public class SecurityConfig {
     }
     private UrlBasedCorsConfigurationSource corsConfigurationSource(){
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of("https://billingsoftware-beta.vercel.app"));
+        config.setAllowedOrigins(List.of("https://billingsoftware-beta.vercel.app","http://localhost:5173"));
         config.setAllowedMethods(List.of("GET","POST","DELETE","PATCH","OPTIONS"));
         config.setAllowedHeaders(List.of("Authorization","Content-Type"));
         config.setAllowCredentials(true);
